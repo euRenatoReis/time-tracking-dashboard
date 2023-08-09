@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" media="(max-width: 375px)" href="./css/mobile.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+
+    <div class="profile-menu">
+
+      <div class="profile">
+
+        <img alt="profile-picture" src="./images/image-jeremy.png" class="perfil-profile">
+
+        <div class="user-information">
+
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+
+        </div>
+
+      </div>
+
+      <div class="menu">
+
+        <input value="Daily" type="button" name="opcoes" class="opcoes-rotina active">
+
+        <input value="Weekly" type="button" name="opcoes" class="opcoes-rotina">
+
+        <input value="Monthly" type="button" name="opcoes" class="opcoes-rotina">
+
+
+      </div>
+
+    </div>
+
+    <div class="blocos">
+
+      <div class="linha-1">
+
+        <div class="work-card">
+
+          <div class="work-content">
+            <div>
+              <h3 class="title">Work</h3>
+              <button class="bt-eclipses">
+                <img src="./images/icon-ellipsis.svg">
+              </button>
+            </div>
+            <div>
+              <h1 class="timerA timer-atual-work">5hrs</h1>
+              <p class="anterior previous-work">Last Day - 7hrs</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="play-card">
+
+          <div class="play-content">
+            <div>
+              <h3 class="title">Play</h3>
+              <button class="bt-eclipses">
+                <img src="./images/icon-ellipsis.svg">
+              </button>
+            </div>
+            <div>
+              <h1 class="timerA timer-atual-play">1hrs</h1>
+              <p class="anterior previous-play">Last Day - 2hrs</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="social-card">
+
+          <div class="social-content">
+            <div>
+              <h3 class="title">Social</h3>
+              <button class="bt-eclipses">
+                <img src="./images/icon-ellipsis.svg">
+              </button>
+            </div>
+            <div>
+              <h1 class="timerA timer-atual-social">0hrs</h1>
+              <p class="anterior previous-social">Last Day - 1hr</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="linha-2">
+
+        <div class="exercise-card">
+
+          <div class="exercise-content">
+            <div>
+              <h3 class="title">Exercise</h3>
+              <button class="bt-eclipses">
+                <img src="./images/icon-ellipsis.svg">
+              </button>
+            </div>
+            <div>
+              <h1 class="timerA timer-atual-exercise">1hr</h1>
+              <p class="anterior previous-exercise">Last Day - 1hr</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="study-card">
+
+
+          <div class="study-content">
+            <div>
+              <h3 class="title">Study</h3>
+              <button class="bt-eclipses">
+                <img src="./images/icon-ellipsis.svg">
+              </button>
+            </div>
+            <div>
+              <h1 class="timerA timer-atual-study">1hr</h1>
+              <p class="anterior previous-study">Last Day - 3hrs</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="selfcare-card">
+
+
+          <div class="selfcare-content">
+            <div>
+              <h3 class="title">Self Care</h3>
+              <button class="bt-eclipses">
+                <img src="./images/icon-ellipsis.svg">
+              </button>
+            </div>
+            <div>
+              <h1 class="timerA timer-atual-selfcare">0hrs</h1>
+              <p class="anterior previous-selfcare">Last Day - 1hr</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="./js/index.js" type="module"></script>
+  <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

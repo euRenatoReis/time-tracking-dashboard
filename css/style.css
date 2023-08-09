@@ -1,0 +1,319 @@
+:root {
+
+    --menu: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --selfcare: hsl(43, 84%, 65%);
+    --fundoBody: hsl(226, 43%, 10%);
+    --parteBaixaDivs: hsl(235, 46%, 20%);
+    --paragrafosEdesativados: hsl(235, 45%, 61%);
+    --titulosEativados: hsl(236, 100%, 87%);
+    --tituloCardsTamanho: 18px;
+    --borderRadiuspage: 20px;
+    --cubeHeightWidth: 200px;
+    --paddingInContents: 20px;
+}
+
+p {
+    color: var(--paragrafosEdesativados);
+}
+
+h1 {
+    color: var(--titulosEativados);
+}
+
+h3{
+    color: var(--titulosEativados);
+    font-size: var(--tituloCardsTamanho);
+}
+
+
+body {
+
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundoBody);
+    height: 100vh;
+}
+
+section {
+
+    height: 500px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-menu {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--parteBaixaDivs);
+    border-radius: var(--borderRadiuspage);
+    height: 420px;
+}
+
+.profile {
+
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    padding: 20px;
+    gap: 30px;
+    background-color: var(--menu);
+    border-radius: var(--borderRadiuspage);
+
+}
+
+.perfil-profile {
+
+    width: 100px;
+    height: 100px;
+    border-radius: var(--borderRadiuspage);
+    padding: 10px;
+}
+
+.user-information {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--parteBaixaDivs);
+    padding: 20px;
+    justify-self: end;
+    justify-content: left;
+    gap: 10px;
+    border-bottom-left-radius: var(--borderRadiuspage);
+    border-bottom-right-radius: var(--borderRadiuspage);
+}
+
+.menu input {
+
+    background: none;
+    color: var(--paragrafosEdesativados);
+    width: 60px;
+    text-align: left;
+}
+
+.opcoes-rotina{
+
+    color: var(--paragrafosEdesativados);
+}
+
+.opcoes-rotina.active{
+
+    color: var(--titulosEativados);
+}
+
+.blocos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 420px;
+}
+
+.linha-1 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 50%;
+    align-items: start;
+    padding-left: 20px;
+}
+
+.linha-2 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 50%;
+    align-items: end;
+    padding-left: 20px;
+}
+
+.work-card {
+
+    display: flex;
+    flex-direction: column;
+    background: url(../images/icon-work.svg) top right no-repeat;
+    background-color: var(--work);
+    justify-content: end;
+    border-radius: var(--borderRadiuspage);
+    width: var(--cubeHeightWidth);
+    height: var(--cubeHeightWidth);
+}
+
+.work-content {
+
+    border-radius: var(--borderRadiuspage);
+    background-color: var(--parteBaixaDivs);
+    height: 80%;
+    padding: var(--paddingInContents);
+}
+
+.work-content div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.exercise-card {
+
+    display: flex;
+    flex-direction: column;
+    background: url(../images/icon-exercise.svg) top right no-repeat;
+    background-color: var(--exercise);
+    justify-content: end;
+    border-radius: var(--borderRadiuspage);
+    width: var(--cubeHeightWidth);
+    height: var(--cubeHeightWidth);
+}
+
+.exercise-content {
+    
+    padding: var(--paddingInContents);
+    border-radius: var(--borderRadiuspage);
+    background-color: var(--parteBaixaDivs);
+    height: 80%;
+
+}
+
+.exercise-content div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.play-card {
+
+    display: flex;
+    flex-direction: column;
+    background: url(../images/icon-play.svg) top right no-repeat;
+    background-color: var(--play);
+    justify-content: end;
+    border-radius: var(--borderRadiuspage);
+    width: var(--cubeHeightWidth);
+    height: var(--cubeHeightWidth);
+}
+
+.play-content {
+
+    padding: var(--paddingInContents);
+    border-radius: var(--borderRadiuspage);
+    background-color: var(--parteBaixaDivs);
+    height: 80%;
+}
+
+.play-content div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.social-card {
+
+    display: flex;
+    flex-direction: column;
+    background: url(../images/icon-social.svg) top right no-repeat;
+    background-color: var(--social);
+    justify-content: end;
+    border-radius: var(--borderRadiuspage);
+    width: var(--cubeHeightWidth);
+    height: var(--cubeHeightWidth);
+}
+
+.social-content {
+    padding: var(--paddingInContents);
+    border-radius: var(--borderRadiuspage);
+    height: 80%;
+    background-color: var(--parteBaixaDivs);
+}
+
+.social-content div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.study-card {
+
+    display: flex;
+    flex-direction: column;
+    background: url(../images/icon-study.svg) top right no-repeat;
+    background-color: var(--study);
+    justify-content: end;
+    border-radius: var(--borderRadiuspage);
+    width: var(--cubeHeightWidth);
+    height: var(--cubeHeightWidth);
+}
+
+.study-content {
+    padding: var(--paddingInContents);
+    border-radius: var(--borderRadiuspage);
+    height: 80%;
+    background-color: var(--parteBaixaDivs);
+}
+
+.study-content div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.selfcare-card {
+
+    display: flex;
+    flex-direction: column;
+
+    background: url(../images/icon-self-care.svg) top right no-repeat;
+    background-color: var(--selfcare);
+    justify-content: end;
+    border-radius: var(--borderRadiuspage);
+    width: var(--cubeHeightWidth);
+    height: var(--cubeHeightWidth);
+}
+
+.selfcare-content {
+    padding: var(--paddingInContents);
+    border-radius: var(--borderRadiuspage);
+    height: 80%;
+    background-color: var(--parteBaixaDivs);
+}
+
+.selfcare-content div:nth-of-type(1) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bt-eclipses {
+
+    background: none;
+}
