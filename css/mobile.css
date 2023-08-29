@@ -1,195 +1,163 @@
-:root {
-
-    --AlturaBloco: 180px;
-    --LarguraBloco: 335px
+h1 {
+    font-size: 24px;
 }
 
-* {
+span {
+    font-size: 18px;
+}
 
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    max-width: 375px;
+p {
+    font-size: 14px;
 }
 
 body {
 
-    padding: 20px;
-    height: 1320px;
-    align-items: center;
-}
-
-section {
-
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 1200px;
-}
-
-.profile-menu {
-
-    display: flex;
-    flex-direction: column;
-    height: 199px;
-}
-
-.profile {
-
-    display: flex;
-    flex-direction: row;
-    height: 130px;
-    align-content: center;
-}
-
-.menu {
-
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    align-items: flex-start;
     justify-content: center;
+
 }
 
-.blocos {
+main {
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-left: 0px;
-    height: 1000px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    background-image: url(../assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--fundoEesferas);
 }
 
-.linha-1 {
+.side-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 140px;
+    background: none;
+}
+
+.side-bar .title-passo-div {
+    display: none;
+}
+
+.passo.aberto {
+
+    width: 90%;
+    height: 400px;
+    position: absolute;
+    background-color: white;
+    transform: translate(18px, 100px);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.div-passo-1,
+.div-passo-2,
+.div-passo-3,
+.div-passo-4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0px;
+    gap: 10px;
+}
+
+
+.div-titulo {
+
+    display: flex;
+    width: 100%;
+}
+
+.formulario {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-left: 0px;
-    height: 50%;
 }
 
-.linha-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-left: 0px;
-    height: 50%;
-}
+.div-campo-entrada {
 
-.work-card {
-
-    width: var(--LarguraBloco);
-    height: var(--AlturaBloco);
     gap: 0px;
 }
 
-.work-content div:nth-child(1){
-    align-items: end;
-    margin-bottom: 5px;
+.div-passo-1 .paginacao {
+
+    position: absolute;
+    margin-top: 0px;
+    transform: translate(-20px, 330px);
 }
 
-.work-content div:nth-child(2){
+.div-passo-2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.planos {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.plano {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    text-align: justify;
+    width: 100%;
+    height: 70px;
 }
 
-.play-card {
-
-    width: var(--LarguraBloco);
-    height: var(--AlturaBloco);
-}
-
-.play-content div:nth-child(1){
-    align-items: end;
-    margin-bottom: 5px;
-}
-
-.play-content div:nth-child(2){
+.div-passo-2 .paginacao {
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: justify;
+    position: absolute;
+    transform: translate(15px, 280px);
 }
 
-.study-card {
-
-    width: var(--LarguraBloco);
-    height: var(--AlturaBloco);
-}
-
-.study-content div:nth-child(1){
-    align-items: end;
-    margin-bottom: 5px;
-}
-
-.study-content div:nth-child(2){
+.div-passo-3 .paginacao {
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: justify;
+    position: absolute;
+    transform: translate(-25px, 300px);
 }
 
-.exercise-card {
-
-    width: var(--LarguraBloco);
-    height: var(--AlturaBloco);
-}
-
-.exercise-content div:nth-child(1){
-    align-items: end;
-    margin-bottom: 5px;
-}
-
-.exercise-content div:nth-child(2){
+.div-passo-4 {
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: justify;
+
 }
 
-.social-card {
-
-    width: var(--LarguraBloco);
-    height: var(--AlturaBloco);
-}
-
-.social-content div:nth-child(1){
-    align-items: end;
-    margin-bottom: 5px;
-}
-
-.social-content div:nth-child(2){
+.div-passo-4 .paginacao {
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: justify;
+    position: absolute;
+    transform: translate(-25px, 270px);
 }
 
-.selfcare-card {
-
-    width: var(--LarguraBloco);
-    height: var(--AlturaBloco);
-}
-
-.selfcare-content div:nth-child(1){
-    align-items: end;
-    margin-bottom: 5px;
-}
-
-.selfcare-content div:nth-child(2){
+.plano-escolhido {
 
     display: flex;
-    flex-direction: row;
+    height: 55px;
+    align-items: center;
     justify-content: space-between;
-    text-align: justify;
-    
+}
+
+.service-escolhido {
+
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: space-between;
 }

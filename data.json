@@ -1,0 +1,65 @@
+{
+    "planos": {
+        "monthly":{
+            "arcade": {
+                "nome": "arcade",
+                "preco": 9
+            },
+            "advanced": {
+                "nome": "advanced",
+                "preco": 12
+            },
+            "pro": {
+                "nome": "pro",
+                "preco": 15
+            }
+        },
+        "yearly":{
+            "arcade": {
+                "nome": "arcade",
+                "preco": 90,
+                "desconto": "2 months free"
+            },
+            "advanced": {
+                "nome": "advanced",
+                "preco": 120,
+                "desconto": "2 months free"
+            },
+            "pro": {
+                "nome": "pro",
+                "preco": 150,
+                "desconto": "2 months free"
+            }
+        }
+    },
+    "addons": {
+        "monthly":{
+            "online_service": {
+                "estilo": "online_service",
+                "preco": 1
+            },
+            "larger_storage": {
+                "estilo": "larger_storage",
+                "preco": 2
+            },
+            "customizable_profile": {
+                "estilo": "customizable_profile",
+                "preco": 2
+            }
+        },
+        "yearly":{
+            "online_service": {
+                "estilo": "online_service",
+                "preco": 10
+            },
+            "larger_storage": {
+                "estilo": "larger_storage",
+                "preco": 20
+            },
+            "customizable_profile": {
+                "estilo": "customizable_profile",
+                "preco": 20
+            }
+        }
+    }
+}
